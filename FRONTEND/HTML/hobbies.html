@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Portfolio</title>
+    <link rel="stylesheet" href="../CSS/navbar.css">
+    <link rel="stylesheet" href="../CSS/hobbies.css">
+</head>
+<body>
+    <header class="nav-header">
+        <nav class="nav nav-container">
+            <div class="nav-menu" id="nav-menu">
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a href="../../index.html" class="nav-link">
+                            <i class="bi bi-arrow-up-right"></i>
+                            <span> Home </span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="../../index.html" class="nav-link">
+                            <i class="bi bi-arrow-up-right"></i>
+                            <span> About </span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./hobbies.html" class="nav-link">
+                            <i class="bi bi-arrow-up-right"></i>
+                            <span> Hobbies </span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./gallery.html" class="nav-link">
+                            <i class="bi bi-arrow-up-right"></i>
+                            <span> Gallery </span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a onclick="openOptions(this)" class="nav-link">
+                            <i class="bi bi-arrow-up-right"></i>
+                            <span> Options </span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    
+    <section class="hobbies-wrapper">
+        <div class="hobbies-container">
+            <h1>Hobbies</h1>
+            <div class="monitor-wrapper">
+                <div class="monitor-container">
+                    <div class="gaming-section" id="gaming" >
+                        <div id="carousel" class="carousel">
+                            <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <div class="image-1">
+                                            <img src="../IMAGES/genshin-impact-waterfalls-landscape-blibargbjq1b2aqd.jpg" alt="gaming-img">
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <div class="image-2">
+                                            <img src="../IMAGES/genshin_impact___landscape_02_vers_b_by_thediffusionguy_dfxmu12-pre.jpg" alt="gaming-img">
+                                        </div>        
+                                    </div>
+                                    <div class="carousel-item">
+                                        <div class="image-3">
+                                            <img src="../IMAGES/wp9230740.png" alt="gaming-img">
+                                        </div>        
+                                    </div>
+                                    <div class="carousel-item">
+                                        <div class="image-4">
+                                            <img src="../IMAGES/inazuma.jpg" alt="gaming-img">
+                                        </div>        
+                                    </div>
+                            </div>
+                                <div class="carousel-controls ">
+                                    <button class="prev" onclick="prevSlide()"><</button>
+                                    <button class="next" onclick="nextSlide()">></button>
+                                </div>
+                                <div class="carousel-indicators d-none d-lg-block">
+                                    <button title="sequence" class="indicator" class="indicator active" onclick="goToSlide(0)"></button>
+                                    <button title="sequence" class="indicator" onclick="goToSlide(1)"></button>
+                                    <button title="sequence" class="indicator" onclick="goToSlide(2)"></button>
+                                    <button title="sequence" class="indicator" onclick="goToSlide(3)"></button>
+                                </div>
+                          </div>
+                    </div>
+                    <div class="coding-section" id="coding">
+                        <div id="carousel" class="carousel">
+                            <div class="carousel-inner">
+                                <<div class="carousel-item active">
+                                    <div class="image-1">
+                                        <img src="../IMAGES/code_1.png" alt="code-img">
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="image-2">
+                                        <img src="../IMAGES/code_2.png" alt="code-img">
+                                    </div>        
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="image-3">
+                                        <img src="../IMAGES/code_3.png" alt="code-img">
+                                    </div>        
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="image-4">
+                                        <img src="../IMAGES/code_4.png" alt="game-img">
+                                    </div>        
+                                </div>
+                            </div>
+                                <div class="carousel-controls ">
+                                    <button class="prev" onclick="prevSlide()"><</button>
+                                    <button class="next" onclick="nextSlide()">></button>
+                                </div>
+                                <div class="carousel-indicators d-none d-lg-block">
+                                    <button title="sequence" class="indicator" class="indicator active" onclick="goToSlide(0)"></button>
+                                    <button title="sequence" class="indicator" onclick="goToSlide(1)"></button>
+                                    <button title="sequence" class="indicator" onclick="goToSlide(2)"></button>
+                                    <button title="sequence" class="indicator" onclick="goToSlide(3)"></button>
+                                </div>
+                          </div>
+                    </div>
+                    <div class="watching-section" id="watching">
+                        <div id="carousel" class="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <div class="image-1">
+                                        <img src="../IMAGES/maxresdefault (3).jpg" alt="watch-img">
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="image-2">
+                                        <img src="../IMAGES/this-is-what-scientists-call-an-ito-ass-shot.jpg" alt="watch-img">
+                                    </div>        
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="image-3">
+                                        <img src="../IMAGES/22c7fd803160789786fa84f14bb7cdb6.jpg" alt="watch-img">
+                                    </div>        
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="image-4">
+                                        <img src="../IMAGES/Eighty-Six-6.7.jpg" alt="watch-img">
+                                    </div>        
+                                </div>
+                            </div>
+                                <div class="carousel-controls ">
+                                    <button class="prev" onclick="prevSlide()"><</button>
+                                    <button class="next" onclick="nextSlide()">></button>
+                                </div>
+                                <div class="carousel-indicators d-none d-lg-block">
+                                    <button title="sequence" class="indicator" class="indicator active" onclick="goToSlide(0)"></button>
+                                    <button title="sequence" class="indicator" onclick="goToSlide(1)"></button>
+                                    <button title="sequence" class="indicator" onclick="goToSlide(2)"></button>
+                                    <button title="sequence" class="indicator" onclick="goToSlide(3)"></button>
+                                </div>
+                          </div>
+                    </div>
+                    <div class="manga-section" id="manga">
+                        <div id="carousel" class="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <div class="image-1">
+                                        <img src="../IMAGES/manga-1.jpg" alt="manga-img">
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="image-2">
+                                        <img src="../IMAGES/manga-2.jpeg" alt="manga-img">
+                                    </div>        
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="image-3">
+                                        <img src="../IMAGES/manga-3.jpg" alt="manga-img">
+                                    </div>        
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="image-4">
+                                        <img src="../IMAGES/manga-4.jpg" alt="manga-img">
+                                    </div>        
+                                </div>
+                            </div>
+                                <div class="carousel-controls ">
+                                    <button class="prev" onclick="prevSlide()"><</button>
+                                    <button class="next" onclick="nextSlide()">></button>
+                                </div>
+                                <div class="carousel-indicators d-none d-lg-block">
+                                    <button title="sequence" class="indicator" class="indicator active" onclick="goToSlide(0)"></button>
+                                    <button title="sequence" class="indicator" onclick="goToSlide(1)"></button>
+                                    <button title="sequence" class="indicator" onclick="goToSlide(2)"></button>
+                                    <button title="sequence" class="indicator" onclick="goToSlide(3)"></button>
+                                </div>
+                          </div>
+                    </div>
+                    <div class="art-section" id="art">
+                        <div id="carousel" class="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <div class="image-1">
+                                        <img src="../IMAGES/bkg5.jpg" alt="digital-art">
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="image-2">
+                                        <img src="../IMAGES/bkg6.PNG" alt="digital-art">
+                                    </div>        
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="image-3">
+                                        <img src="../IMAGES/bkg7.png" alt="digital-art">
+                                    </div>        
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="image-4">
+                                        <img src="../IMAGES/bkg8.png" alt="digital-art">
+                                    </div>        
+                                </div>
+                            </div>
+                                <div class="carousel-controls ">
+                                    <button class="prev" onclick="prevSlide()"><</button>
+                                    <button class="next" onclick="nextSlide()">></button>
+                                </div>
+                                <div class="carousel-indicators d-none d-lg-block">
+                                    <button title="sequence" class="indicator" class="indicator active" onclick="goToSlide(0)"></button>
+                                    <button title="sequence" class="indicator" onclick="goToSlide(1)"></button>
+                                    <button title="sequence" class="indicator" onclick="goToSlide(2)"></button>
+                                    <button title="sequence" class="indicator" onclick="goToSlide(3)"></button>
+                                </div>
+                          </div>
+                    </div>
+                </div>
+            </div>
+            <div class="monitor-control">
+                <div class="change-buttons">
+                    <div class="radio-inputs">
+                        <label class="radio">
+                            <input type="radio" name="radio" value="gaming" checked>
+                            <span class="name">Gaming</span>
+                        </label>
+                        <label class="radio">
+                            <input type="radio" name="radio" value="coding" >
+                            <span class="name">Coding</span>
+                        </label>
+                        <label class="radio">
+                            <input type="radio" name="radio" value="watching" >
+                            <span class="name">Watching</span>
+                        </label>
+                        <label class="radio">
+                            <input type="radio" name="radio" value="manga" >
+                            <span class="name">Manga</span>
+                        </label>
+                        <label class="radio">
+                            <input type="radio" name="radio" value="art" >
+                            <span class="name">Art</span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="background-container">
+        <div class="slides fade" style="background-image: url('../IMAGES/bkg6.png');"></div>
+        <div class="slides fade" style="background-image: url('../IMAGES/bkg7.png');"></div>
+        <div class="slides fade" style="background-image: url('../IMAGES/bkg8.png');"></div>
+    </div>
+
+    <script src="../JS/hobbies.js"></script>
+    <script src="../JS/bkgCarosel.js"></script>
+</body>
+</html>

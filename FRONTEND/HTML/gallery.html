@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../CSS/navbar.css">
+    <link rel="stylesheet" href="../CSS/gallery.css">
+</head>
+<body>
+    <header class="nav-header">
+        <nav class="nav nav-container">
+            <div class="nav-menu" id="nav-menu">
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a href="../../index.html" class="nav-link">
+                            <i class="bi bi-arrow-up-right"></i>
+                            <span> Home </span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="../../index.html" class="nav-link">
+                            <i class="bi bi-arrow-up-right"></i>
+                            <span> About </span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./hobbies.html" class="nav-link">
+                            <i class="bi bi-arrow-up-right"></i>
+                            <span> Hobbies </span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./gallery.html" class="nav-link">
+                            <i class="bi bi-arrow-up-right"></i>
+                            <span> Gallery </span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a onclick="openOptions(this)" class="nav-link">
+                            <i class="bi bi-arrow-up-right"></i>
+                            <span> Options </span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <div class="gallery-wrapper">
+        <div class="gallery-container" id="gallery">
+          <div class="gallery-title">
+            <h1>Gallery</h1>
+          </div>
+          <div class="container-gallery">
+            <div class="img box-1" data-text="Friends" style="background-image: url(../IMAGES/gallery1.jpg);"></div>
+            <div class="img box-2" data-text="Friends" style="background-image: url(../IMAGES/gallery2.jpg);"></div>
+            <div class="img box-3" data-text="Friends" style="background-image: url(../IMAGES/gallery3.jpg);"></div>
+            <div class="img box-4" data-text="Friends" style="background-image: url(../IMAGES/gallery4.jpg);"></div>
+            <div class="img box-5" data-text="Friends" style="background-image: url(../IMAGES/gallery5.jpg);"></div>
+        </div>
+        </div>
+      </div>
+
+    <div class="background-container">
+        <div class="slides fade" style="background-image: url('../IMAGES/bkg6.png');"></div>
+        <div class="slides fade" style="background-image: url('../IMAGES/bkg7.png');"></div>
+        <div class="slides fade" style="background-image: url('../IMAGES/bkg8.png');"></div>
+    </div>
+
+    <script src="../JS/bkgCarosel.js"></script>
+</body>
+</html>
