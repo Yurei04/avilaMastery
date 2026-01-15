@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Website</title>
+    <link rel="stylesheet" href="FRONTEND/CSS/options.css">
+    <link rel="stylesheet" href="FRONTEND/CSS/navbar.css">
+    <link rel="stylesheet" href="FRONTEND/CSS/style.css">
+</head>
+<body>
+    <!--NAVIGATION-->
+    <header class="nav-header">
+        <nav class="nav nav-container">
+            <div class="nav-menu" id="nav-menu">
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            <i class="bi bi-arrow-up-right"></i>
+                            <span> Home </span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#about" class="nav-link">
+                            <i class="bi bi-arrow-up-right"></i>
+                            <span> About </span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./Frontend/HTML/hobbies.html" class="nav-link">
+                            <i class="bi bi-arrow-up-right"></i>
+                            <span> Hobbies </span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./Frontend/HTML/gallery.html" class="nav-link">
+                            <i class="bi bi-arrow-up-right"></i>
+                            <span> Gallery </span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a onclick="openAboutModal(event)" class="nav-link">
+                            <i class="bi bi-arrow-up-right"></i>
+                            <span> Options </span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!--HOME-->
+
+    <section class="carosel-wrapper">
+        <div class="carosel-container">
+            <div class="carosel-list">
+                <div class="carosel-item">
+                    <img src="./Frontend/IMAGES/bkg2.png" alt="bkg-img">
+                    <div class="carosel-content">
+                        <div class="carosel-name">Yuri Avila</div>
+                        <div class="carosel-title">Personal Webpage</div>
+                        <div class="carosel-topic">Welcome</div>
+                        <div class="carosel-des">
+                            <p>
+                                Hello! My name is James Yuri R. Avila
+                            </p>
+                        </div>
+                        <div class="carosel-button">
+                            <button title="proceed" id="proceed-btn">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span> Proceed
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="carosel-item">
+                    <img src="./Frontend/IMAGES/bkg3.png" alt="bkg-img">
+                    <div class="carosel-content">
+                        <div class="carosel-name">Yuri Avila</div>
+                        <div class="carosel-title">Personal Webpage</div>
+                        <div class="carosel-topic">Greetings</div>
+                        <div class="carosel-des">
+                            <p>
+                                I am a Developer Specializing in JS frameworks and Web Developement.
+                            </p>
+                        </div>
+                        <div class="carosel-button">
+                            <button title="proceed" id="proceed-btn">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span> Proceed
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="carosel-item">
+                    <img src="./Frontend/IMAGES/bkg4.png" alt="bkg-img">
+                    <div class="carosel-content">
+                        <div class="carosel-name">Yuri Avila</div>
+                        <div class="carosel-title">Personal Webpage</div>
+                        <div class="carosel-topic">Interest</div>
+                        <div class="carosel-des">
+                            <p>
+                                I am interest highly in UI/UX design as well as Game Developement.
+                            </p>
+                        </div>
+                        <div class="carosel-button">
+                            <button title="proceed" id="proceed-btn">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span> Proceed
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        <div class="carosel-box">
+            <div class="box-item">
+                <img src="./Frontend/IMAGES/bkg2.png" alt="box-img">
+                <div class="box-content">
+                    <div class="box-title">
+                        Greetings
+                    </div>
+                </div>
+            </div>
+            <div class="box-item">
+                <img src="./Frontend/IMAGES/bkg3.png" alt="box-img">
+                <div class="box-content">
+                    <div class="box-title">
+                        About
+                    </div>
+                </div>
+            </div>
+            <div class="box-item">
+                <img src="./Frontend/IMAGES/bkg4.png" alt="box-img">
+                <div class="box-content">
+                    <div class="box-title">
+                        Interest
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <div class="arrows">
+            <button title="<" id="prev"></button>
+            <button title=">" id="next"></button>
+        </div>
+
+        <div class="time"></div>
+
+    </div>
+</section>
+
+<section class="about-wrapper" id="about">
+    <div class="about-container">
+        <div class="skills-container">
+            <div class="card-title">
+                <h2>About Me</h2>
+            </div>
+
+            <div class="about-me-container">
+                <div class="picture-me">
+                    <img src="./Frontend/IMAGES/AVILA JAMES YURI .jpg" alt="Picture of Me">
+                </div>    
+                    <div class="change-buttons">
+                        <div class="radio-inputs">
+                            <label class="radio">
+                                <input type="radio" name="radio" value="about" checked>
+                                <span class="name">About</span>
+                            </label>
+                            <label class="radio">
+                                <input type="radio" name="radio" value="accomplishments" >
+                                <span class="name">Accomplishments</span>
+                            </label>
+                                
+                            <label class="radio">
+                                <input type="radio" name="radio" value="skills" >
+                                <span class="name">Skills</span>
+                            </label>
+                        </div>
+                    </div>
+            </div>
+            <div class="credentials" id="aboutContent">
+                <div class="credentials-card">
+                    <div class="tools">
+                            <div class="circle">
+                                <span class="red box"></span>
+                            </div>
+                            <div class="circle">
+                                <span class="yellow box"></span>
+                            </div>
+                            <div class="circle">
+                                <span class="green box"></span>
+                            </div>
+                            </div>
+                            <div class="card-content">
+                            <div class="card-title">
+                                <h2>Basic Information</h2>
+                            </div>
+                            <div class="credentials-content">
+                                <code class="code">
+                                    <p><span class="color-0">Information</span> <span>{</span></p>
+                        
+                                    <p class="property">
+                                        <span class="color-2">&nbsp;&nbsp;Name</span><span>:</span>
+                                        <span class="color-1">
+                                            "James Yuri R. Avila"
+                                        </span>;
+                                    </p>
+                                    <p class="property">
+                                        <span class="color-2">&nbsp;&nbsp;Age</span><span>:</span>
+                                        <span class="color-1">
+                                            19
+                                        </span>;
+                                    </p>
+                                    <p class="property">
+                                        <span class="color-2">&nbsp;&nbsp;Occupation</span><span>:</span>
+                                        <span class="color-1">
+                                            "Student"
+                                        </span>;
+                                    </p>
+                                    <span>}</span>
+                                </code>
+                            </div>
+                        </div>
+                </div>
+                <div class="credentials-card">
+                        <div class="tools">
+                            <div class="circle">
+                                <span class="red box"></span>
+                            </div>
+                            <div class="circle">
+                                <span class="yellow box"></span>
+                            </div>
+                            <div class="circle">
+                                <span class="green box"></span>
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <div class="card-title">
+                                <h2>Introduction</h2>
+                            </div>
+                            <div class="credentials-content">
+                                <code class="code">
+                                    <p><span class="color-0">Hello</span> <span>{</span></p>
+                        
+                                    <p class="property">
+                                        <span class="color-2">&nbsp;&nbsp;Introduce</span><span>:</span>
+                                        <span class="color-1">
+                                            "Hello! I am James Yuri R. Avila. Currently a student at University of the Cordilleras. Aspiring To be a Full Stack Developer."   
+                                        </span>;
+                                    </p>
+                                    <span>}</span>
+                                </code>
+                            </div>
+                        </div>
+                </div>
+                <div class="credentials-card">
+                        <div class="tools">
+                            <div class="circle">
+                                <span class="red box"></span>
+                            </div>
+                            <div class="circle">
+                                <span class="yellow box"></span>
+                            </div>
+                            <div class="circle">
+                                <span class="green box"></span>
+                            </div>
+                            </div>
+                            <div class="card-content">
+                            <div class="card-title">
+                                <h2>Contacts</h2>
+                            </div>
+                            <div class="credentials-content">
+                                <code class="code">
+                                    <p><span class="color-0">Information</span> <span>{</span></p>
+                        
+                                    <p class="property">
+                                        <span class="color-2">&nbsp;&nbsp;Contact_Info</span><span>:</span>
+                                        <span class="color-1">
+                                            Hello! You can contact me at:
+                                            <br>&nbsp;&nbsp;riyuyuri04@gmail.com - email
+                                            <br>&nbsp;&nbsp;Yurei04 - GitHub
+                                        </span>;
+                                    </p>
+                                    <span>}</span>
+                                </code>
+                            </div>
+                        </div>
+                </div>
+                <div class="credentials-card">
+                        <div class="tools">
+                            <div class="circle">
+                                <span class="red box"></span>
+                            </div>
+                            <div class="circle">
+                                <span class="yellow box"></span>
+                            </div>
+                            <div class="circle">
+                                <span class="green box"></span>
+                            </div>
+                            </div>
+                            <div class="card-content">
+                            <div class="card-title">
+                                <h2>Field Interest</h2>
+                            </div>
+                            <div class="credentials-content">
+                                <code class="code">
+                                    <p><span class="color-0">Interest</span> <span>{</span></p>
+                        
+                                    <p class="property">
+                                        <span class="color-2">Developement</span><span>:</span>
+                                        <span class="color-1">
+                                            <br>&nbsp;&nbsp; Game Developement
+                                            <br>&nbsp;&nbsp; Web Developement
+                                            <br>&nbsp;&nbsp; Software Developement
+                                            <br>&nbsp;&nbsp; UI/UX Design
+                                    </p>
+                                    <span>}</span>
+                                </code>
+                            </div>
+                        </div>
+                </div>
+            </div>
+
+            <div class="credentials-accom" id="accomplishmentContent">
+                <section id="skill-card" class="skill-card">
+                    <h3>2nd Place</h3> 
+                    <img src="./Frontend/IMAGES/trophy.PNG" alt="trophy image">
+                    <div class="skill-content">
+                        <p class="skill-title">SandCodes Hackathon</p>
+                        <p class="skill-des">
+                            A Hackathon with 365 people participating, Sponsored by Tleem, AOPs and etc.
+                        </p>
+                    </div>
+                </section>
+                
+                <section id="skill-card" class="skill-card">
+                    <h3>Website Award</h3> 
+                    <img src="./Frontend/IMAGES/trophy.PNG" alt="trophy image">
+                    <div class="skill-content">
+                        <p class="skill-title">MegaHacks23 / kinetiks</p>
+                        <p class="skill-des">
+                            A Hackathon with 266 people participating, Sponsored by Accorian, SAP, Axure, kinetiks and etc.
+                        </p>
+                    </div>
+                </section>
+                
+                <section id="skill-card" class="skill-card">
+                    <h3>1st Place </h3> 
+                    <img src="./Frontend/IMAGES/trophy.PNG" alt="trophy image">
+                    <div class="skill-content">
+                        <p class="skill-title">New Type Work Hacks</p>
+                        <p class="skill-des">
+                            A Hackathon with 305 people participating, sponsored by New Type Works and .XYZ.
+                        </p>
+                    </div>
+                </section>
+                
+                <section id="skill-card" class="skill-card">
+                    <h3> Participation </h3> 
+                    <img src="./Frontend/IMAGES/trophy.PNG" alt="trophy image">
+                    <div class="skill-content">
+                        <p class="skill-title">PeddieHacks</p>
+                        <p class="skill-des">
+                            A Hackathon with 318 people participating, sponsored by Peddie Schools, Wolfram, Sublime and etc.
+                        </p>
+                    </div>
+                </section>
+
+            </div>
+
+            <div class="credentials-skills" id="skillContent">
+                <section id="skill-card" class="skill-card">
+                    <h2> Developement </h2> 
+                    <div class="skill-content">
+                        <p class="skill-title">Progamming Languages</p>
+                        <p class="skill-des">
+                            <br>-JavaScript
+                            <br>-React 
+                            <br>-Next JS
+                            <br>-HTML/CSS
+                            <br>-Tailwind
+                            <br>-Python
+                        </p>
+                    </div>
+                </section>
+                
+                <section id="skill-card" class="skill-card">
+                    <h2> Proficiency </h2> 
+                    <div class="skill-content">
+                        <p class="skill-title">Apps Expertise</p>
+                        <p class="skill-des">
+                            <br>-Photoshop
+                            <br>-Premiere 
+                            <br>-Indesign
+                            <br>-Ibis Paint
+                        </p>
+                    </div>
+                </section>
+                
+                <section id="skill-card" class="skill-card">
+                    <h2> Skills </h2> 
+                    <div class="skill-content">
+                        <p class="skill-title">Current Skills</p>
+                        <p class="skill-des">
+                            <br>-Photo editing
+                            <br>-Digital Art 
+                            <br>-Public Speaking
+                            <br>-Computer Skills
+                            <br>-Idealist
+                        </p>
+                    </div>
+                </section>
+                
+                <section id="skill-card" class="skill-card">
+                    <h2> Currently Learning </h2> 
+                    <div class="skill-content">
+                        <p class="skill-title">Work On Progress</p>
+                        <p class="skill-des">
+                            <br>-Node js
+                            <br>-Json
+                            <br>-CustomTKinter
+                            <br>-Axure
+                            <br>-Game Developement
+                        </p>
+                    </div>
+                </section>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+<div id="options-modal" class="modal">
+    <div class="modal-container">
+    <div class="modal-header">
+        <h2>Options</h2>
+        <span class="close" onclick="closeAboutModal()">&times;</span>
+    </div>
+    <div class="modal-content">
+        <button>
+            Standard
+        </button>
+        <button>
+            Color Scheme 1
+        </button>
+        <button>
+            Color Scheme 2
+        </button>
+        
+    </div>
+    </div>
+</div>
+
+
+    <div class="background-container">
+        <div class="slides fade" style="background-image: url('');"></div>
+        <div class="slides fade" style="background-image: url('');"></div>
+        <div class="slides fade" style="background-image: url('');"></div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
